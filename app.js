@@ -11,7 +11,7 @@ const indexer = {
 init(process.argv[2], process.argv[3]);
 function init(type, numCPU)  {
   if (cluster.isMaster) {
-    console.log(`Master ${process.pid} is running`);
+    console.log(`Started with process id: ${process.pid}`);
     for (let i = 0; i < numCPU; i++)  {
       cluster.fork();
     }
