@@ -16,7 +16,7 @@ function init(type, numCPU)  {
       cluster.fork();
     }
     cluster.on('death', function(worker) {
-      console.log(`Worker ${process.pid} has died`);
+      console.log(`Worker with process id ${process.pid} has died`);
     });
   } else {
     const service = new indexer[type]();
