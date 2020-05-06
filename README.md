@@ -1,4 +1,4 @@
-# Blockchain Indexer
+# blockchain-indexer
 
 Following instructions from:
 
